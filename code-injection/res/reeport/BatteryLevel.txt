@@ -1,0 +1,53 @@
+class ch/supsi/netlab/batterymonitor/BatteryLevel 
+	Extends: android/app/Activity 
+	Method: <init>
+	JUMPS:0	Instr:15				INVOKE_SPECIAL  android/app/Activity.<init> 
+				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/BatteryLevel$1.<init> 
+
+	Method: onCreate
+	JUMPS:0	Instr:39				INVOKE_SPECIAL  android/app/Activity.onCreate 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.setContentView 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.findViewById 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.findViewById 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.findViewById 
+				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/BatteryLevel$2.<init> 
+				INVOKE_VIRTUAL  android/widget/Button.setOnClickListener 
+				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/BatteryLevel$3.<init> 
+				INVOKE_VIRTUAL  android/widget/Button.setOnClickListener 
+
+	Method: access$10
+	JUMPS:0	Instr:4
+	Method: access$11
+	JUMPS:0	Instr:3				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/BatteryLevel.stopApplication 
+
+	Method: stopApplication
+	JUMPS:2	Instr:15				INVOKE_VIRTUAL  android/os/PowerManager$WakeLock.isHeld 
+				INVOKE_VIRTUAL  android/os/PowerManager$WakeLock.release 
+
+	Method: onCreateOptionsMenu
+	JUMPS:0	Instr:7				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.getMenuInflater 
+				INVOKE_VIRTUAL  android/view/MenuInflater.inflate 
+
+	Method: access$9
+	JUMPS:0	Instr:4
+	Method: <clinit>
+	JUMPS:0	Instr:4				INVOKE_VIRTUAL  java/lang/Class.getSimpleName 
+
+	Method: access$8
+	JUMPS:0	Instr:4
+	Method: access$7
+	JUMPS:0	Instr:3
+	Method: access$6
+	JUMPS:0	Instr:4
+	Method: access$5
+	JUMPS:0	Instr:2
+	Method: access$4
+	JUMPS:0	Instr:3
+	Method: access$3
+	JUMPS:0	Instr:3
+	Method: access$2
+	JUMPS:0	Instr:3
+	Method: access$1
+	JUMPS:0	Instr:3
+	Method: access$0
+	JUMPS:0	Instr:3

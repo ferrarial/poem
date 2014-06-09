@@ -1,0 +1,13 @@
+class ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector$1 
+	Extends: java/lang/Object 
+	Implement: java/lang/Runnable
+	Method: <init>
+	JUMPS:0	Instr:9				INVOKE_SPECIAL  java/lang/Object.<init> 
+
+	Method: run
+	JUMPS:0	Instr:10				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector.access$0 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$2 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/PressureDataObject.getAirPressure 
+				INVOKE_STATIC  java/lang/Float.toString 
+				INVOKE_VIRTUAL  android/widget/TextView.setText 
+

@@ -1,0 +1,13 @@
+class ch/supsi/netlab/batterymonitor/PressureDataObject 
+	Extends: java/lang/Object 
+	Method: setTime
+	JUMPS:0	Instr:4
+	Method: getAirPressure
+	JUMPS:0	Instr:3
+	Method: <init>
+	JUMPS:0	Instr:9				INVOKE_SPECIAL  java/lang/Object.<init> 
+
+	Method: setAirPressure
+	JUMPS:0	Instr:4
+	Method: getTime
+	JUMPS:0	Instr:3

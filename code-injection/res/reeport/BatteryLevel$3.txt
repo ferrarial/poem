@@ -1,0 +1,9 @@
+class ch/supsi/netlab/batterymonitor/BatteryLevel$3 
+	Extends: java/lang/Object 
+	Implement: android/view/View$OnClickListener
+	Method: <init>
+	JUMPS:0	Instr:6				INVOKE_SPECIAL  java/lang/Object.<init> 
+
+	Method: onClick
+	JUMPS:0	Instr:4				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$11 
+

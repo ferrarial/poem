@@ -1,0 +1,22 @@
+class ch/supsi/netlab/batterymonitor/BatteryLevel$2 
+	Extends: java/lang/Object 
+	Implement: android/view/View$OnClickListener
+	Method: <init>
+	JUMPS:0	Instr:6				INVOKE_SPECIAL  java/lang/Object.<init> 
+
+	Method: onClick
+	JUMPS:0	Instr:44				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.getSystemService 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$5 
+				INVOKE_VIRTUAL  android/os/PowerManager.newWakeLock 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$6 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$7 
+				INVOKE_VIRTUAL  android/os/PowerManager$WakeLock.acquire 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$8 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.getSystemService 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$9 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$0 
+				INVOKE_VIRTUAL  android/hardware/SensorManager.getDefaultSensor 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$10 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$4 
+				INVOKE_VIRTUAL  android/os/Handler.sendEmptyMessage 
+

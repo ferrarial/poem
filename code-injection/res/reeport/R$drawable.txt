@@ -1,0 +1,5 @@
+class ch/supsi/netlab/batterymonitor/R$drawable 
+	Extends: java/lang/Object 
+	Method: <init>
+	JUMPS:0	Instr:3				INVOKE_SPECIAL  java/lang/Object.<init> 
+

@@ -1,0 +1,51 @@
+class ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector 
+	Extends: java/lang/Object 
+	Implement: android/hardware/SensorEventListener
+	Implement: java/lang/Runnable
+	Method: <init>
+	JUMPS:0	Instr:18				INVOKE_SPECIAL  java/lang/Object.<init> 
+				INVOKE_SPECIAL  java/lang/Thread.<init> 
+
+	Method: getPressMedianValue
+	JUMPS:0	Instr:10				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector.sortByPressure 
+				INVOKE_VIRTUAL  java/util/ArrayList.get 
+
+	Method: collectData
+	JUMPS:0	Instr:4				INVOKE_VIRTUAL  java/lang/Thread.start 
+
+	Method: sortByPressure
+	JUMPS:5	Instr:51				INVOKE_VIRTUAL  java/util/ArrayList.size 
+				INVOKE_VIRTUAL  java/util/ArrayList.get 
+				INVOKE_VIRTUAL  java/util/ArrayList.get 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/PressureDataObject.getAirPressure 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/PressureDataObject.getAirPressure 
+				INVOKE_VIRTUAL  java/util/ArrayList.set 
+				INVOKE_VIRTUAL  java/util/ArrayList.get 
+				INVOKE_VIRTUAL  java/util/ArrayList.set 
+
+	Method: onSensorChanged
+	JUMPS:0	Instr:21				INVOKE_STATIC  java/lang/System.currentTimeMillis 
+				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/PressureDataObject.<init> 
+				INVOKE_VIRTUAL  java/util/ArrayList.add 
+
+	Method: onAccuracyChanged
+	JUMPS:0	Instr:1
+	Method: run
+	JUMPS:5	Instr:67				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$0 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$1 
+				INVOKE_VIRTUAL  android/hardware/SensorManager.registerListener 
+				INVOKE_SPECIAL  java/util/ArrayList.<init> 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector.getPressMedianValue 
+				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector$1.<init> 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel.runOnUiThread 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$0 
+				INVOKE_VIRTUAL  android/hardware/SensorManager.unregisterListener 
+				INVOKE_STATIC  java/lang/Thread.sleep 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$3 
+				INVOKE_STATIC  ch/supsi/netlab/batterymonitor/BatteryLevel.access$4 
+				INVOKE_VIRTUAL  android/os/Handler.sendEmptyMessage 
+				INVOKE_STATIC  java/lang/Thread.sleep 
+				INVOKE_VIRTUAL  java/lang/InterruptedException.printStackTrace 
+
+	Method: access$0
+	JUMPS:0	Instr:3

@@ -1,0 +1,9 @@
+class ch/supsi/netlab/batterymonitor/BatteryLevel$1 
+	Extends: android/os/Handler 
+	Method: <init>
+	JUMPS:0	Instr:6				INVOKE_SPECIAL  android/os/Handler.<init> 
+
+	Method: handleMessage
+	JUMPS:0	Instr:7				INVOKE_SPECIAL  ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector.<init> 
+				INVOKE_VIRTUAL  ch/supsi/netlab/batterymonitor/BatteryLevel$PressuraDataCollector.collectData 
+
