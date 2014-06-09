@@ -1,0 +1,26 @@
+Code Injection for Android Application.
+Alan Ferrari <alan.ferrari@supsi.ch>
+
+It mark every method call (start and ending) by adding
+a system.out call (mstar and mend + class/method name respetively).
+
+demoapp/ containsa simple application for testing.
+In order to modify test the injection you've to:
+a) enter in demoapp and remove BatteryMonitor.apk and BatteryMonitor-signed.apk
+b) Mv BatteryMonitor.apk-bak in BatteryMonitor.apk (copy it) it is a clean version
+c) run apk-trasformation.sh
+d) Install BatteryMonitor.apk-signed.apk in your Android device.
+  #adb BatteryMonitor.apk-signed.apk
+
+In order to see the output you've to look at the logcat i.e. by
+  #adb shell
+  now you're connected to the android device
+  #logcat
+  
+  
+The program also provide a class analysis description that is placed
+in the res/reeport directory
+  
+Todo:
+  -Comment the code
+  -Improve the visualization
